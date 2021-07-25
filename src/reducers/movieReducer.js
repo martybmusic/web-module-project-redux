@@ -14,8 +14,8 @@ const reducer = (state = initialState, action) => {
             }
         case ADD_MOVIE:
             const newMovie = {
-                ...state,
-                movies: action.payload,
+                ...action.payload,
+                id: Date.now()
             }
             return {
                 ...state,
