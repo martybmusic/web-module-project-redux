@@ -8,7 +8,7 @@ const FavoriteMovieList = (props) => {
     const {favorites, deleteFave} = props;
     const handleClick = (id) => {
         deleteFave(id);
-    }
+    };
     
     return (<div className="col-xs savedContainer">
         <h5>Favorite Movies</h5>
